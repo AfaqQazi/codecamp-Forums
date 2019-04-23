@@ -1,0 +1,94 @@
+* {
+	margin:0;
+}
+
+#title-block {
+	text-align: center;
+}
+
+ h1 {
+	color:#00334e;
+	font-size:2.5rem;
+	padding-bottom:0.5%;
+	padding-top:0.5%;
+	font-family: arial , helvetica;
+	margin-top:1%;
+}
+
+#main {
+	background-color:#e8e8e8;
+	font-family: arial , sans-serif;
+	text-align: center;
+	margin:0.5% 15% 2% 15%;
+	border-radius: 5px;
+	padding:1% 0%	;
+	color:#00334e;
+}
+
+#main #description {
+	font-size:1.2rem;
+	font-weight: 100;
+}
+
+#survey-form {margin-top:3%;}
+
+#main .box {
+	display:block;
+	margin:2%;
+}
+
+#main .box .first {
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+}
+#main .box .second {
+	display: inline-block;
+	width:40%;
+	text-align: left;
+}
+
+#main .box p {
+	padding-right:5%;
+	align-self: center;
+	font-size:1.1rem;
+	font-weight: 100;
+	width:100%;
+}
+
+#main .box input,select {
+	width:280px;
+	height:25px;
+}
+
+@media (max-width:1000px) {#main {margin:0.5% 5% 2% 5%}}
+
+@media (max-width:833px) {#main .box input,select {width:90%}}	
+@media(max-width: 623px) {#main .box .first p {font-size:14px;}}
+
+@media (max-width:500px) {
+	#main {margin:0.5% 2% 2% 2%;}
+	#title {font-size:1.5rem;}
+	#main #description {font-size:1rem;}
+	#main .box .first p {font-size:15px;}
+	#main .box .first {width:10%;}
+	#main .box .first {width:100%; text-align: left}
+	#main .box .second {width:100%; text-align: left}
+	#main .box input,select {width:100%}
+	#main #survey-form {margin-top:1%;padding-right:1%;}
+}
+
+button {
+	border:none;
+	padding:10px 40px;
+	border:1.5px solid dodgerblue;
+	color:grey;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color:dodgerblue;
+	transition:0.3s;
+	color:whitesmoke;
+}
+

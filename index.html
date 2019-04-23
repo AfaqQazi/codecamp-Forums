@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="title-block"><h1 id="title">Survey Form</h1></div>	
+  <div id="main">
+  	 <p id="description">Fill out your college application below.</p>
+  	 <form id="survey-form">
+  	 	<label class="box" for="name-label">
+  	 	  <div class="first"><p>Name:</p></div>
+  	 	  <div class="second"><input id="name-label" name="name" required placeholder="Enter Your Name"></div>
+  	 	</label>
+  	 	<label class="box" for="email-label">
+  	 	  <div class="first"><p>Email:</p></div>
+  	 	  <div class="second"><input id="email-label" name="email" required placeholder="Enter Your Email"></div>
+  	 	</label>
+  	 	<label class="box" for="age-label">
+  	 	  <div class="first"><p>Age:</p></div>
+  	 	  <div class="second"><input id="age" name="age-label" type="number" min="18" max="50" required placeholder="Enter Your Age"></div>
+  	 	</label>
+  	 	<label class="box" for="dropdown-label">
+  	 	  <div class="first"><p>Do you have a job ?:</p></div>
+  	 	  <div class="second">
+  	 	  	<select id="dropdown-label" name="dropdown-label" type="dropdown" required>
+  	 	  		<option disabled value>Select an option</option>
+  	 	  		<option value='Full Time Job'>Full Time job</option>
+  	 	  		<option value=No Job'>No Job</option>
+  	 	  		<option value='Part Time Job'>Part Time Job</option>
+  	 	  	</select>
+  	 	  </div>
+  	 	</label>
+  	 	<label for="radio-label">
+  	 	  <div style="margin-bottom:10px"><p>What was your experience in last institue ?</p></div>
+  	 	  <div style="margin-bottom: 10px">
+  	 	  	<input type="radio" name="radio" value="good"> good.
+  	 	  	<input type="radio" name="radio" value="bad"> bad.
+  	 	  	<input type="radio" name="radio" value="ok"> ok.
+  	 	  </div>
+  	 	</label>
+  	 	 <label for="checkbox-label">
+  	 	  <div style="margin-bottom:10px"><p>What programmes are on your list ?</p></div>
+  	 	  <div>
+  	 	  	<input type="checkbox" name="radio" value="programme1"> Programme1 
+  	 	  	<input type="checkbox" name="radio" value="programme2"> Programme2
+  	 	  	<input type="checkbox" name="radio" value="programme3"> Programme3
+  	 	  </div>
+  	 	</label>
+  	 	<label for="textarea-label">
+  	 	  <div style="margin-top:10px" class="first"><p>Any Comments ?</p></div>
+  	 	  <div style="margin-top:10px" class="second"><textarea id="textarea" name="textarea"></textarea></div>
+  	 	</label>
+  	 	<br>
+  	 	<button id="submit">Submit</button>
+  	 </form>
+  </div>
+</body>
+</html>
